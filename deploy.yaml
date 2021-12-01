@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python
+spec:
+  selector:
+    matchLabels:
+      app: python
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: python
+    spec:
+      containers:
+      - name: python
+        image: gcr.io/valid-expanse-333605/python
+        ports:
+        - containerPort: 80
+        env:
+          - name: PORT
+            value: "8080"
