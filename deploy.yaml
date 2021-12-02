@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python
-        image: gcr.io/valid-expanse-333605/python
+        image: docker pull 1104ravi409/newimage:tagname
         ports:
         - containerPort: 80
         env:
