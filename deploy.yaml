@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python
-        image: docker pull 1104ravi409/newimage:tagname
+        image: docker pull 1104ravi409/newimage:latest
         ports:
         - containerPort: 80
         env:
