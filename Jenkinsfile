@@ -14,7 +14,9 @@ pipeline {
       stage('scm checkout') {
            steps {
         checkout scm 
-                  }
+           }
+        }
+          
         stage('git repo & clone') {
             steps {
                 git branch: 'main', url: 'https://github.com/Raviyadav409/CI-CD-pipeline.git'
